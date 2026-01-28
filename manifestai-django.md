@@ -88,9 +88,12 @@ from projecthub.models import (
 
 ## Tracking du project. (`TRACKING`) 
 
-1. Il s'agit du fichier tree.md a la racine du projet.
+1. Il s'agit du fichier tree.md a la racine du projet django. 
 2. A chaque fois qu'une nouvelle classe ou fonction est cree il faut mettre a jour le fichier tree.md pour ajouter la nouvelle classe ou fonction avec un commentaire. 
 3. Mais aussi des tags comme par exemple TESTED ou TODO si la fonction n'est pas encore testee.
+4. Ce fichier sert a l'IA pour eviter de dupliquer du code deja existant.
+5. Mais aussi pour ce reperer dans le projet. 
+
 
 ## Objectif
 
