@@ -46,7 +46,9 @@ Je veut que tu lise le document manifestai-django.md et que tu suive les directi
 ## Unitest (`TEST`)
 
 1. rajouter la ligne `@usage: python3 manage.py test projecthub.tests.tasks.TaskCreateViewTestCase` dans la docstring de la methode setUp de chaque classe de test unitaire.
-2. Les fonctions de creation d'objet de base de donne ce trouve dans les fichiers $app/utils/test.py exemple sprintTestCreate, projectTestCreate etc...
+2. Pour creer des donnees de test reutilisable il faut creer des fonctions dans un fichier $app_name/utils/test.py exemple `createTestUserProfile()` qui creer un user profile de test.
+3. Si la fonction de creation de donne de test n'existe pas il faut la creer dans $app_name/utils/test.py avant de l'utiliser dans les tests unitaires.
+4. Ne jamais creer de donne de test directement avec le modele dans les tests unitaires, il faut toujours passer par une fonction de creation de donne de test dans $app_name/utils/test.py
 
 ## Import (`IMPORT`)
 
