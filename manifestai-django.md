@@ -86,6 +86,12 @@ from projecthub.models import (
 )
 ` 
 
+## Tracking du project. (`TRACKING`) 
+
+1. Il s'agit du fichier tree.md a la racine du projet.
+2. A chaque fois qu'une nouvelle classe ou fonction est cree il faut mettre a jour le fichier tree.md pour ajouter la nouvelle classe ou fonction avec un commentaire. 
+3. Mais aussi des tags comme par exemple TESTED ou TODO si la fonction n'est pas encore testee.
+
 ## Objectif
 
 Cette directive de codage est conçue pour être utilisée avec des projets **Django**
